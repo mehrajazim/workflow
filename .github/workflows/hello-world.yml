@@ -1,0 +1,9 @@
+name: Hello World Workflow
+on: [push]  # Trigger on push event
+
+jobs:
+  greet-user:
+    runs-on: ubuntu-latest  # Use a GitHub-hosted runner
+    steps:
+      - name: Say Hello
+        run: echo "Hello, GitHub Workflow!"
